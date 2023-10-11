@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        h1{
+            background-color: darkgreen;
+        }
+        body{
+            background-color: lightgreen;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bouncing Telephone Sign Up</h1>
+    <br>
+    <form action="" class="center">
+        <legend>Create Account</legend>
+        <h2 class="center">Username</h2>
+        <input type="text" name="" id="" required class="center">
+        <h2 class="center">Create Password</h2>
+        <input type="password" class="center" required id="pass1">
+        <h2 class="center">Confirm Password</h2>
+        <input type="password" name=""  class="center" id="pass2">
+        <br>
+        <button type="submit" id="button" onclick="confirm()">Submit</button>
+    </form>
+    <script>
+        function confirm(){
+            var a = document.getElementById("pass1").value;
+            var b = document.getElementById("pass2").value;
+            console.log(a);
+            console.log(b);
+            if(a === b){
+                document.write("You are good to go!")
+            }
+            else{
+                alert("Passwords do not match")
+            };
+        };
+    </script>
+</body>
+</html>
